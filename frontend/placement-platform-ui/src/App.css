@@ -1,0 +1,30 @@
+
+/* App-level styles only.
+   Page-specific styles live in index.css and DSAPractice.css. */
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
