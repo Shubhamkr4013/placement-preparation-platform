@@ -45,7 +45,7 @@ public class MockTestController {
     public Map<String, Object> getTestById(@PathVariable Long id) {
 
         MockTest test = mockTestRepository
-                .findByIdWithQuestionsAndOptions(id)
+                .findByIdWithQuestions(id)
                 .orElseThrow(() -> new ResponseStatusException(
                         HttpStatus.NOT_FOUND,
                         "Mock test not found with id: " + id
